@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>object_adapter</OriginalElement>
+  <nodes>
+    <node x="281.0" y="438.0">object_adapter.client</node>
+    <node x="555.0" y="72.0">object_adapter.adapter</node>
+    <node x="-236.0" y="181.0">object_adapter.hair_dryer</node>
+    <node x="746.3354166666667" y="-98.0">object_adapter.power_supply</node>
+    <node x="331.2145833333334" y="-84.5">object_adapter.power_supply_adapter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="object_adapter.client" target="object_adapter.hair_dryer" relationship="CREATE">
+      <point x="-96.0" y="0.0" />
+      <point x="-13.0" y="482.5" />
+      <point x="0.0" y="71.0" />
+    </edge>
+    <edge source="object_adapter.adapter" target="object_adapter.power_supply" relationship="TO_ONE">
+      <point x="75.33333333333337" y="-58.0" />
+      <point x="743.3333333333334" y="115.0" />
+      <point x="838.3354166666667" y="115.0" />
+      <point x="0.0" y="44.5" />
+    </edge>
+    <edge source="object_adapter.hair_dryer" target="object_adapter.power_supply_adapter" relationship="DEPENDENCY">
+      <point x="0.0" y="-71.0" />
+      <point x="-13.0" y="115.0" />
+      <point x="395.9645833333334" y="115.0" />
+      <point x="-64.75" y="31.0" />
+    </edge>
+    <edge source="object_adapter.adapter" target="object_adapter.power_supply" relationship="DEPENDENCY">
+      <point x="0.0" y="-58.0" />
+      <point x="668.0" y="115.0" />
+      <point x="777.0020833333333" y="115.0" />
+      <point x="-61.33333333333337" y="44.5" />
+    </edge>
+    <edge source="object_adapter.client" target="object_adapter.adapter" relationship="CREATE">
+      <point x="0.0" y="-44.5" />
+      <point x="377.0" y="130.0" />
+      <point x="-113.0" y="0.0" />
+    </edge>
+    <edge source="object_adapter.adapter" target="object_adapter.power_supply_adapter" relationship="REALIZATION">
+      <point x="-75.33333333333326" y="-58.0" />
+      <point x="592.6666666666667" y="115.0" />
+      <point x="525.4645833333334" y="115.0" />
+      <point x="64.75" y="31.0" />
+    </edge>
+    <edge source="object_adapter.client" target="object_adapter.power_supply" relationship="CREATE">
+      <point x="96.0" y="0.0" />
+      <point x="853.3354166666667" y="482.5" />
+      <point x="15.0" y="44.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="351.5" y="214.5" />
+  <SelectedNodes>
+    <node>object_adapter.power_supply</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
